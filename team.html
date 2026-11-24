@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("pithub-theme");
+
+                const preferredTheme =
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                        ? "light"
+                        : "dark";
+
+                const theme =
+                    savedTheme === "light" || savedTheme === "dark"
+                        ? savedTheme
+                        : preferredTheme;
+
+                document.documentElement.dataset.theme = theme;
+
+            } catch (error) {
+                document.documentElement.dataset.theme = "dark";
+            }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the Bear Down developers behind PitHub.">
+
+    <title>Our Team | PitHub</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+	<link rel="icon" href="/assets/logo/pithub-tab-logo.png" type="image/png">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="PitHub home">PitHub</a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">☰</button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="faq.html">FAQ</a>
+            <a class="active" href="team.html">Team</a>
+        </nav>
+
+        <div class="header-actions">
+		<button
+			class="theme-toggle"
+			type="button"
+			aria-label="Switch color theme"
+			title="Switch color theme"
+		>
+			<img
+				class="theme-icon"
+				src="/assets/logo/dark-mode.png"
+				alt=""
+			>
+		</button>
+		<a
+			class="header-button header-button-outline"
+			href="https://forms.gle/XXeWgGT44vZbGn86A"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Sign Up
+		</a>
+
+		<a
+			class="header-button header-button-primary"
+			href="https://backend--pithub-test-kd.us-east4.hosted.app"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Launch PitHub
+		</a>
+		</div>
+    </header>
+
+    <main>
+        <section class="page-hero section-shell">
+            <p class="eyebrow">PITHUB DEVELOPMENT TEAM</p>
+            <h1>Meet Our PitHub Team.</h1>
+            <p class="section-lead">
+                PitHub was originally developed by <a href="https://nice-bay-0f6a7851e.4.azurestaticapps.net/" target="_blank">Bear Down</a> 
+                for their 2025 Software Engineering Spring Semester course, and is now being maintained by current developers from the Software Engineering and Capstone courses.
+            </p>
+        </section>
+
+        <section class="section-shell team-section">
+
+            <!-- Bear Down Founders -->
+            <div class="team-group">
+                <h2 class="team-group-title">Bear Down (Founders)</h2>
+
+                <div class="team-grid">
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/kevin-dacanay.jpg"
+                             alt="Kevin Dacanay">
+
+                        <h3>Kevin Dacanay</h3>
+                        <p class="team-role">FOUNDING DEVELOPER</p>
+
+                        <a href="mailto:kevinbrianfdacanay@lewisu.edu">
+                            kevinbrianfdacanay@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/KevinDacanay"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/sebastian-jaculbe.jpg"
+                             alt="Sebastian Jacuble">
+
+                        <h3>Sebastian Jacuble</h3>
+                        <p class="team-role">FOUNDING DEVELOPER</p>
+
+                        <a href="mailto:sebastiandjaculbe@lewisu.edu">
+                            sebastiandjaculbe@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/Sebbae1"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/erick-hernandez.jpg"
+                             alt="Erick Hernandez">
+
+                        <h3>Erick Hernandez</h3>
+                        <p class="team-role">FOUNDING DEVELOPER</p>
+
+                        <a href="mailto:erickrdhernandez@lewisu.edu">
+                            erickrdhernandez@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/kairoshdz"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/kaleb-richardson.jpg"
+                             alt="Kaleb Richardson">
+
+                        <h3>Kaleb Richardson</h3>
+                        <p class="team-role">FOUNDING DEVELOPER</p>
+
+                        <a href="mailto:kalebrjrichardson@lewisu.edu">
+                            kalebrjrichardson@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/KalebR6101"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/edward-rodriguez.jpg"
+                             alt="Edward Rodriguez">
+
+                        <h3>Edward Rodriguez</h3>
+                        <p class="team-role">FOUNDING DEVELOPER</p>
+
+                        <a href="mailto:edwardhrodriguez@lewisu.edu">
+                            edwardhrodriguez@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/Eddy2005cs"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- RedDragons Current Developers -->
+            <div class="team-group">
+                <h2 class="team-group-title">Red Dragons (Current Developers)</h2>
+
+                <div class="team-grid">
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/jacob-mysliwiec.jpg"
+                             alt="Jacob Mysliwiec">
+
+                        <h3>Jacob Mysliwiec</h3>
+                        <p class="team-role">CURRENT DEVELOPER</p>
+
+                        <a href="mailto:jacobmmysliwiec@lewisu.edu">
+                            jacobmmysliwiec@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/Jbob104"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    <article class="team-card">
+                        <img class="team-photo"
+                             src="/assets/members/josh-salazar.jpg"
+                             alt="Josh Salazar">
+
+                        <h3>Josh Salazar</h3>
+                        <p class="team-role">CURRENT DEVELOPER</p>
+
+                        <a href="mailto:joshsalazar@lewisu.edu">
+                            joshsalazar@lewisu.edu
+                        </a>
+
+                        <a href="https://github.com/EndangeredBlobfish"
+                           target="_blank"
+                           rel="noopener">
+                            GitHub profile
+                        </a>
+                    </article>
+
+                    
+                    <article class="team-card">
+                        <img class="team-photo"
+                        src="/assets/members/mirjavkhar-djavkharov.jpg"
+                        alt="Mirjavkhar Djavkharov">
+                        
+                        <h3>Mirjavkhar Djavkharov</h3>
+                        <p class="team-role">CURRENT DEVELOPER</p>
+                        
+                        <a href="mailto:mirjavkhardjavkhar@lewisu.edu">
+                            mirjavkhardjavkhar@lewisu.edu
+                        </a>
+                        
+                        <a href="https://github.com/Mirjavkhar"
+                        target="_blank"
+                        rel="noopener">
+                        GitHub profile
+                    </a>
+                </article>
+                
+                <article class="team-card">
+                    <img class="team-photo"
+                         src="/assets/members/chloe-washington.jpg"
+                         alt="Chloe Washington">
+
+                    <h3>Chloe Washington</h3>
+                    <p class="team-role">CURRENT DEVELOPER</p>
+
+                    <a href="mailto:chloewashington@lewisu.edu">
+                        chloewashington@lewisu.edu
+                    </a>
+
+                    <a href="https://github.com/FutureCleo1"
+                       target="_blank"
+                       rel="noopener">
+                        GitHub profile
+                    </a>
+                </article>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-shell footer-inner">
+            <a class="brand" href="index.html">PitHub</a>
+            <p>PitHub Org · 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

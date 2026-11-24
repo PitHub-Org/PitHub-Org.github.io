@@ -1,12 +1,249 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>PitHub</title>
-  </head>
-  <body>
-    <header>PitHub Website</header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+<head>
+	<script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("pithub-theme");
+
+                const preferredTheme =
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                        ? "light"
+                        : "dark";
+
+                const theme =
+                    savedTheme === "light" || savedTheme === "dark"
+                        ? savedTheme
+                        : preferredTheme;
+
+                document.documentElement.dataset.theme = theme;
+
+            } catch (error) {
+                document.documentElement.dataset.theme = "dark";
+            }
+        })();
+    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="PitHub is a centralized academic resource hub for sharing course videos and documents.">
+	<title>PitHub | Academic Resource Hub</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/script.js" defer></script>
+	<link rel="icon" href="/assets/logo/pithub-tab-logo.png" type="image/png">
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="PitHub home">PitHub</a>
+		<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a class="active" href="index.html">Home</a>
+			<a href="features.html">Features</a>
+			<a href="faq.html">FAQ</a>
+			<a href="team.html">Team</a>
+		</nav>
+		<div class="header-actions">
+		<button
+			class="theme-toggle"
+			type="button"
+			aria-label="Switch color theme"
+			title="Switch color theme"
+		>
+			<img
+				class="theme-icon"
+				src="/assets/logo/dark-mode.png"
+				alt=""
+			>
+		</button>
+		<a
+			class="header-button header-button-outline"
+			href="https://forms.gle/XXeWgGT44vZbGn86A"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Sign Up
+		</a>
+
+		<a
+			class="header-button header-button-primary"
+			href="https://backend--pithub-test-kd.us-east4.hosted.app"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Launch PitHub
+		</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero section-shell">
+		<div class="hero-copy">
+			<p class="eyebrow">LEWIS UNIVERSITY EXCLUSIVE</p>
+			<h1>Course resources.<br><span>All in one place.</span></h1>
+			<p class="hero-text">PitHub gives Lewis University faculty and staff a centralized place to upload, organize, share, and access instructional videos and documents by class.</p>
+			<div class="hero-actions">
+				<a class="button button-primary" href="https://forms.gle/XXeWgGT44vZbGn86A" target="_blank" rel="noopener noreferrer">Register to Use</a>
+				<a class="button button-secondary" href="features.html">Explore features</a>
+			</div>
+		</div>
+		<div class="hero-visual">
+			<img src="assets/images/ptihub-dashboard.png" alt="PitHub dashboard showing recent uploads and class cards">
+			<span class="visual-caption">PitHub dashboard preview</span>
+		</div>
+		</section>
+
+		<section class="section-shell intro-grid">
+		<div>
+			<p class="eyebrow">WHAT IS PITHUB?</p>
+			<h2>A shared academic resource hub</h2>
+		</div>
+		<div>
+			<p>PitHub is a web application designed for the Lewis University community. It helps faculty and staff upload and keep course-related videos and documents organized and easier to find.</p>
+			<p>Resources can be grouped into classes or playlists. Uploaders can control whether resources are public or private and manage who can access shared content.</p>
+		</div>
+		</section>
+
+		<section class="problem-section">
+		<div class="section-shell">
+			<p class="eyebrow">THE CHALLENGE</p>
+			<h2>Keeping instructional resources accessible shouldn't be complicated.</h2>
+			<p class="section-lead">
+			As educational platforms and services evolve, faculty need a dependable
+			way to host, organize, and share their instructional materials.
+			Maintaining access to these resources shouldn't mean compromising
+			convenience, organization, or control.
+			</p>
+
+			<div class="problem-cards">
+			<article class="info-card">
+				<span class="card-number">01</span>
+				<h3>Reliable content hosting</h3>
+				<p>
+				Lewis University faculty need a dependable place to host instructional 
+				videos, documents, and other educational materials for their courses.
+				</p>
+			</article>
+
+			<article class="info-card">
+				<span class="card-number">02</span>
+				<h3>Centralized course resources</h3>
+				<p>
+				Keeping instructional materials organized in one place makes
+				it easier for faculty to manage content and for students to
+				access the resources they need.
+				</p>
+			</article>
+
+			<article class="info-card">
+				<span class="card-number">03</span>
+				<h3>Control over content sharing</h3>
+				<p>
+				Faculty need flexibility in managing their instructional
+				materials, controlling access, and deciding how resources
+				are shared with their intended audiences.
+				</p>
+			</article>
+			</div>
+		</div>
+		</section>
+
+		<section class="section-shell steps-section">
+		<p class="eyebrow">HOW IT WORKS</p>
+		<div class="steps">
+			<article>
+				<span>1</span>
+				<h3>Request Access</h3>
+				<p>Complete the PitHub Registration Form to express your interest in using the platform.</p>
+			</article>
+
+			<article>
+				<span>2</span>
+				<h3>Get Registered</h3>
+				<p>Once your request is reviewed and approved, your Lewis University email will be registered for PitHub access.</p>
+			</article>
+
+			<article>
+				<span>3</span>
+				<h3>Sign In & Get Started</h3>
+				<p>Log in using your registered Lewis University account to access PitHub and its features.</p>
+			</article>
+
+			<article>
+				<span>4</span>
+				<h3>Create & Upload</h3>
+				<p>Create a class or playlist, then upload and organize your instructional videos and documents.</p>
+			</article>
+
+			<article>
+				<span>5</span>
+				<h3>Share Your Resources</h3>
+				<p>Share links to your uploaded content with students, or let others discover publicly accessible classes, documents, and profiles through PitHub.</p>
+			</article>
+		</div>
+		</section>
+		
+
+		<section class="tech-section">
+		<div class="section-shell tech-grid">
+			<div>
+			<p class="eyebrow">TECHNOLOGY STACK</p>
+			<h2>Built with modern web tools</h2>
+			<p class="section-lead">
+				The application separates the user interface from the services
+				that manage accounts, files, and academic resource data.
+			</p>
+			</div>
+
+			<div class="tech-list">
+			<div class="tech-item">
+				<img class="tech-logo" src="/assets/logo/react-logo.png" alt="React logo">
+				<div>
+				<strong>React</strong>
+				<span>Frontend interface and user experience</span>
+				</div>
+			</div>
+
+			<div class="tech-item">
+				<img class="tech-logo" src="/assets/logo/firebase-logo.png" alt="Firebase logo">
+				<div>
+				<strong>Firebase Authentication</strong>
+				<span>User sign-in and account management</span>
+				</div>
+			</div>
+
+			<div class="tech-item">
+				<img class="tech-logo" src="/assets/logo/firebase-logo.png" alt="Cloud Firestore logo">
+				<div>
+				<strong>Cloud Firestore</strong>
+				<span>Application data and resource organization</span>
+				</div>
+			</div>
+
+			<div class="tech-item">
+				<img class="tech-logo" src="/assets/logo/firebase-logo.png" alt="Firebase Storage logo">
+				<div>
+				<strong>Firebase Storage</strong>
+				<span>Uploaded videos and documents</span>
+				</div>
+			</div>
+
+			<div class="tech-item">
+				<img class="tech-logo" src="/assets/logo/github-logo.png" alt="GitHub logo">
+				<div>
+				<strong>GitHub</strong>
+				<span>Source control and team collaboration</span>
+				</div>
+			</div>
+			</div>
+		</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="section-shell footer-inner">
+			<a class="brand" href="index.html">PitHub</a>
+			<p>PitHub Org · 2026 </p>
+		</div>
+	</footer>
+</body>
 </html>

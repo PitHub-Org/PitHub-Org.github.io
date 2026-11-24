@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("pithub-theme");
+
+                const preferredTheme =
+                    window.matchMedia("(prefers-color-scheme: light)").matches
+                        ? "light"
+                        : "dark";
+
+                const theme =
+                    savedTheme === "light" || savedTheme === "dark"
+                        ? savedTheme
+                        : preferredTheme;
+
+                document.documentElement.dataset.theme = theme;
+
+            } catch (error) {
+                document.documentElement.dataset.theme = "dark";
+            }
+        })();
+    </script>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore PitHub's academic resource sharing features.">
+    <title>Features | PitHub</title><link rel="stylesheet" href="/css/style.css"><script src="/js/script.js" defer></script>
+	<link rel="icon" href="/assets/logo/pithub-tab-logo.png" type="image/png">
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="PitHub home">PitHub</a>
+		<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+		<nav class="main-nav" aria-label="Main navigation">
+			<a href="index.html">Home</a>
+			<a class="active"href="features.html">Features</a>
+			<a href="faq.html">FAQ</a>
+			<a href="team.html">Team</a>
+
+		</nav>
+		<div class="header-actions">
+		<button
+			class="theme-toggle"
+			type="button"
+			aria-label="Switch color theme"
+			title="Switch color theme"
+		>
+			<img
+				class="theme-icon"
+				src="/assets/logo/dark-mode.png"
+				alt=""
+			>
+		</button>
+		<a
+			class="header-button header-button-outline"
+			href="https://forms.gle/XXeWgGT44vZbGn86A"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Sign Up
+		</a>
+
+		<a
+			class="header-button header-button-primary"
+			href="https://backend--pithub-test-kd.us-east4.hosted.app"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Launch PitHub
+		</a>
+		</div>
+	</header>
+    <main>
+        <section class="page-hero section-shell"><p class="eyebrow">PITHUB CAPABILITIES</p><h1>Current Features of PitHub.</h1><p class="section-lead">A central location for course videos, documents, playlists, and shared academic resources.</p></section>
+        <section class="section-shell feature-list">
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Video Hosting</h2>
+                <p>
+                    Upload and access instructional videos in a centralized
+                    location. Video entries can be associated with the class
+                    or playlist where they are used.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-video-hosting.png"
+                    alt="PitHub video hosting feature">
+            </div>
+        </article>
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Class Organization</h2>
+                <p>
+                    Create class pages with course information and related
+                    learning materials. Keep resources grouped by course
+                    instead of searching through unrelated files.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-class-organization.png"
+                    alt="PitHub class organization feature">
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Playlists</h2>
+                <p>
+                    Collect related resources in a playlist. Private playlists
+                    can support controlled collaboration with invited members
+                    and assigned permissions.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-playlists.png"
+                    alt="PitHub playlists feature">
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Document Sharing</h2>
+                <p>
+                    Share course documents alongside videos so students can
+                    find different types of learning materials in one place.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-document-sharing.png"
+                    alt="PitHub document sharing feature">
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Search Functionality</h2>
+                <p>
+                    Search for videos, classes, and users to make relevant
+                    academic resources easier to discover.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-search-functionality.png"
+                    alt="PitHub search functionality feature">
+            </div>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-content">
+                <h2>Public and Private Resources</h2>
+                <p>
+                    Choose whether a class or playlist is public or private.
+                    Playlist permissions can control whether invited members
+                    can view, upload, or delete content.
+                </p>
+            </div>
+            <div class="feature-image">
+                <img src="/assets/images/pithub-public-private.png"
+                    alt="PitHub public and private resources feature">
+            </div>
+        </article>
+
+    </section>
+    </main>
+    <footer class="site-footer">
+		<div class="section-shell footer-inner">
+			<a class="brand" href="index.html">PitHub</a>
+			<p>PitHub Org · 2026 </p>
+		</div>
+	</footer>
+</body>
+</html>
